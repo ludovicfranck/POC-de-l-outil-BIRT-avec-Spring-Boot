@@ -124,10 +124,10 @@ Gestion des ressources : Assurez-vous de toujours fermer les tâches et le moteu
 
  ## 7. Alternatives pour la production
 
- Pour des déploiements en production:
- - Utilisez Pentaho BA Server pour les rapports complexes
- - Considérez une génération asynchrone des rapports
- - Mettez en place un système de files d'attente pour les gros rapports
+Pour les applications critiques, considérez:
 
-Cette implémentation montre comment intégrer efficacement Pentaho Reporting dans une application Spring Boot, avec prise en charge de plusieurs formats de sortie et injection de données dynamiques.
-New chat
+- Déployer le moteur BIRT sur un serveur d'applications séparé
+- Utiliser BIRT Viewer comme application web autonome
+- Générer les rapports de manière asynchrone et notifier les utilisateurs quand ils sont prêts
+
+Cette implémentation montre comment intégrer BIRT avec Spring Boot pour générer des rapports dynamiques dans différents formats. Vous pouvez étendre cette base avec des fonctionnalités plus avancées comme les sous-rapports, les graphiques complexes et les connexions à diverses sources de données.
