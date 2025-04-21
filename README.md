@@ -104,3 +104,30 @@ public ResponseEntity<byte[]> generateEmployeeReport(
 ```
 
 ## 5 Tester l'application
+- Lancer l'application Spring Boot
+- Acceder aux Endpoints :
+  - [](http://localhost:8080/api/reports/simple_report/pdf) pour le rapport simple en pdf
+  - [](http://localhost:8080/api/reports/simple_report/html) pour le rapport simple en html
+  - [](http://localhost:8080/api/reports/employees/pdf) pour le rapport employé en pdf
+
+## 6. Bonnes pratiques et optimisation
+
+Cache des rapports : Cachez les designs de rapport compilés pour améliorer les performances
+
+Gestion des ressources : Assurez-vous de toujours fermer les tâches et le moteur BIRT
+
+ Configuration : Configurez le chemin des logs BIRT pour le dépannage
+
+ Sécurité : Validez les paramètres d'entrée pour éviter les attaques par injection
+
+ Concurrence : Le moteur BIRT n'est pas thread-safe, utilisez un pool d'engines pour les hautes performances
+
+ ## 7. Alternatives pour la production
+
+ Pour des déploiements en production:
+     - Utilisez Pentaho BA Server pour les rapports complexes
+     - Considérez une génération asynchrone des rapports
+     - Mettez en place un système de files d'attente pour les gros rapports
+
+Cette implémentation montre comment intégrer efficacement Pentaho Reporting dans une application Spring Boot, avec prise en charge de plusieurs formats de sortie et injection de données dynamiques.
+New chat
