@@ -125,9 +125,9 @@ Gestion des ressources : Assurez-vous de toujours fermer les tâches et le moteu
  ## 7. Alternatives pour la production
 
  Pour des déploiements en production:
-     - Utilisez Pentaho BA Server pour les rapports complexes
-     - Considérez une génération asynchrone des rapports
-     - Mettez en place un système de files d'attente pour les gros rapports
+ - Utilisez Pentaho BA Server pour les rapports complexes
+ - Considérez une génération asynchrone des rapports
+ - Mettez en place un système de files d'attente pour les gros rapports
 
 Cette implémentation montre comment intégrer efficacement Pentaho Reporting dans une application Spring Boot, avec prise en charge de plusieurs formats de sortie et injection de données dynamiques.
 New chat
